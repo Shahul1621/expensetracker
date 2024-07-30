@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">Expense Tracker</div>
+      <div class="top">
+        <div class="expense">
+          <button class="add-amount">Add Amount</button>
+          <div class="details">
+            <input type="text" id="type" placeholder="Type" />
+            <input
+              type="text"
+              id="description"
+              placeholder="Enter description"
+            />
+            <input type="number" id="amount" placeholder="Enter amount" />
+          </div>
+        </div>
+      </div>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Options</th>
+          </tr>
+        </thead>
+        <tbody id="expenses-table">
+          <!-- expenses will be rendered here -->
+          <tr>
+            <td class="tdata">Income</td>
+            <td class="tdata">Salary</td>
+            <td class="tdata">$500</td>
+            <td class="delete tdata">Delete</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
